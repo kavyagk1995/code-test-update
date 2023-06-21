@@ -1,0 +1,29 @@
+$color_1: #0059bf;
+$color_2: #000000;
+$color_3: #606669;
+$color_4: #d4d4d5;
+
+
+a {
+	font-size: 18px;
+	color: $color_1;
+}
+h2 {
+	font-size: 28px;
+	color: $color_2;
+}
+p {
+	font-size: 17px;
+	color: $color_3;
+}
+hr {
+	font-size: 0.5px;
+	color: $color_4;
+}
+
+.divElem {
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

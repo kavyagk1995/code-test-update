@@ -1,0 +1,23 @@
+a {
+  font-size: 18px;
+  color: #0059bf; }
+
+h2 {
+  font-size: 28px;
+  color: #000000; }
+
+p {
+  font-size: 17px;
+  color: #606669; }
+
+hr {
+  font-size: 0.5px;
+  color: #d4d4d5; }
+
+.divElem {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=index.css.map */
