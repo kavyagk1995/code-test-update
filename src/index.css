@@ -1,12 +1,12 @@
-a {
+.custmlink {
   font-size: 18px;
   color: #0059bf; }
 
-h2 {
+.heading {
   font-size: 28px;
   color: #000000; }
 
-p {
+.discription {
   font-size: 17px;
   color: #606669; }
 
@@ -14,10 +14,18 @@ hr {
   font-size: 0.5px;
   color: #d4d4d5; }
 
-.divElem {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+.articleCard {
+  padding: 10px; }
+  @media (min-width: 576px) {
+    .articleCard {
+      display: contents; } }
+  @media (min-width: 768px) {
+    .articleCard {
+      display: contents; } }
+  @media (min-width: 992px) {
+    .articleCard {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: space-between; } }
 
 /*# sourceMappingURL=index.css.map */

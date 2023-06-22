@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-    <title>Articles</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="index.css">
-
-</head>
-
-<body >
-  <script type="module" src="index.js"></script>
-  <div id="container"> </div>
-</body>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Articles</title>
+      <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body onload="getArticles()">
+    <div id="articWidget"> </div>
+  </body>
+  <script>
+    async function getArticles(){
+        const responce = await fetch('code-test.json');
+        const articles_obj = await responce.json();
+        let article = "";
+        articles_obj.articles.forEach((i)=>{
+          article+=`<div class="articleCard"> <div><a class="custmlink" href="${i.link}"> ${i.primarySectionRouteName}</a><h2 class="heading">${i.headline}</h2><p class="discription">${i.standfirst}</P></div><div><img src="${i.thumbnail.src}" width="${i.thumbnail.width}" height="${i.thumbnail.height}"></div></div><hr>`
+        })
+        document.getElementById("articWidget").innerHTML = article;
+    }
+  </script>
 </html>
