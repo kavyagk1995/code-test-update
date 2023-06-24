@@ -10,8 +10,9 @@
     <div id="articWidget"> </div>
   </body>
   <script>
-    
+
     async function getArticles(){
+      
         const responce = await fetch('code-test.json');
         const articles_obj = await responce.json();
         let article = "";
