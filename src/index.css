@@ -21,7 +21,7 @@ hr {
     .articleCard {
       display: contents; } }
   @media (min-width: 768px) {
-    .articleCard {
+    .articleCard  {
       display: contents; } }
   @media (min-width: 992px) {
     .articleCard {
